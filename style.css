@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #023047;
+  height: 100vh;
+  font-family: "Fraunces", serif;
+  font-family: "Commissioner", sans-serif;
+}
+
+/* ------------------- SIDE ANIMATION --------------------- */
+
+.nav {
+  position: absolute;
+  width: 181px;
+  height: 1024px;
+  left: -93.52px;
+  top: -4px;
+
+  background: #ffb703;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  transform: rotate(3.11deg);
+
+  transition-duration: 500ms;
+  transition-property: transform, width;
+  transition-timing-function: ease-in-out;
+}
+
+.nav-dec {
+  position: absolute;
+  width: 736.75px;
+  height: 1024px;
+  left: -626.96px;
+
+  background: #fb8500;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  transform: rotate(4.09deg);
+
+  transition-duration: 400ms;
+  transition-property: transform, width;
+  transition-timing-function: ease-in-out;
+}
+
+.button {
+  position: absolute;
+  cursor: pointer;
+
+  width: 35px;
+  height: 51px;
+  left: 18px;
+  top: 22px;
+
+  background: #219ebc;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 4px;
+}
+
+.nav-moved {
+  transform: rotate(10deg);
+  width: 500px;
+}
+
+.nav-dec-moved {
+  transform: rotate(15deg);
+  width: 1100px;
+}
+
+/* ------------------------ NAV MENU ----------------------- */
+
+.nav-menu {
+  position: absolute;
+  width: 260px;
+  height: 500px;
+  left: 90px;
+  top: 70px;
+
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 100.3%;
+  transform: rotate(12deg);
+
+  text-align: center;
+  color: #ffb703;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  display: none;
+
+  /* transition-duration: 500ms;
+  transition-property: all;
+  transition-timing-function: ease; */
+  transition: all 0.5s ease;
+}
+
+.nav-menu:hover {
+  color: #c93131;
+  transform: rotate(32deg);
+}
+
+.show-nav-menu {
+  color: #ffffff;
+}
+
+/* ----------------------- LANDING TOP -----------------------*/
+
+.landing-top-grid {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.book-image {
+  background-image: url("./book.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+  grid-row: 2;
+  margin-left: -150px;
+
+  transition-duration: 100ms;
+  transition-property: margin;
+  transition-timing-function: ease-out;
+}
+
+.book-up {
+  margin-top: -35px;
+}
+
+.book-up-one {
+  margin-top: -70px;
+}
+
+/* .book-up-two {
+  margin-top: -90px;
+} */
+
+/* ------------------ TITLES ----------------- */
+
+.landing-titles {
+  margin-top: 20px;
+  height: 30vh;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.log-in-sign-up {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+
+  border: none;
+  border-radius: 1.5em;
+  background-color: #219ebc;
+  color: #ffffff;
+  font-family: "Commissioner", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.5em 2em;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.log-in-btn {
+  grid-column: 4;
+  grid-row: 1;
+  justify-self: flex-end;
+}
+
+.sign-up-btn {
+  grid-column: 5;
+  grid-row: 1;
+
+  color: #ffb703;
+}
+
+.title {
+  margin: 0;
+  margin-top: 10px;
+  grid-column: 2 / -2;
+  grid-row: 2;
+
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 118px;
+  text-align: center;
+
+  color: #ffffff;
+
+  display: grid;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.sub-title {
+  margin: 0;
+  margin-top: 5px;
+  color: #fb8500;
+  font-family: "Commissioner", sans-serif;
+}
+
+.sub-title-read {
+  grid-row: 3;
+  grid-column: 2;
+  text-align: right;
+}
+
+.sub-title-remember {
+  grid-row: 3;
+  grid-column: 3;
+  text-align: center;
+}
+
+.sub-title-repeat {
+  grid-row: 3;
+  grid-column: 4;
+  text-align: left;
+}
